@@ -5,6 +5,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="WDD 230 - Web Frontend Development Baron Tshibasu Chamber of Commerce Site">
+  <meta name="author" content="Baron Tshibasu">
+
+  <!--Open Graph Meta Tags for social media sharing-->
+
+  <meta property="og:title" content="WDD330 - CFA Final Project">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://nrb2002.github.io/wdd330-final-project-cfa/assets/images/logo-transparent.webp">
+  <meta property="og:url" content="https://nrb2002.github.io/wdd330-final-project-cfa/">
+  <meta property="og:description" content="WDD 330 - Web Frontend Development II - Baron Tshibasu CFA Course Final Project">
+  <meta name="twitter:card" content="summary_large_image">
+
   <title>College For All - Sign-in</title>
 
   <!-- 
@@ -85,21 +98,37 @@
 
       <section class="section hero" id="home">
         <div class="container">
-
+          
           <!-- Sign in form -->
            <div class="login-page">
+            <h2>Sign-in</h2>
             <div class="form">
-                <form class="login-form " action="dashboard.html">
-                    <h2>Sign in as a Student</h2>
+                <form class="login-form" action="dashboard.html">
+                    <h2>Students</h2><hr><br>
                     <input type="text" required placeholder="Username" id="user" autocomplete="off" />
                     <input oninput="return formvalid()" type="password" required placeholder="Password" id="pass" autocomplete="off" />
                     <img src="https://cdn2.iconfinder.com/data/icons/basic-ui-interface-v-2/32/hide-512.png"
                         onclick="show()" id="showimg">
-                    <span id="vaild-pass"></span>
+                    <span class="vaild-pass"></span>
                     <button type="submit" class="btn">Access My Portal</button>
-                    <p class="message"><a href="#">Forgot your password?</a></p>
+                    <span class="message"><a href="#">Forgot your password?</a></span>
+                    <span class="message"><a href="#">Don't have an account? Sign-up.</a></span>
                 </form>
             </div>
+
+            <div class="form">
+              <form class="login-form" action="dashboard.html">
+                  <h2>Colleges</h2><hr><br>
+                  <input type="text" required placeholder="Username" id="user" autocomplete="off" />
+                  <input oninput="return formvalid()" type="password" required placeholder="Password" id="pass" autocomplete="off" />
+                  <img src="https://cdn2.iconfinder.com/data/icons/basic-ui-interface-v-2/32/hide-512.png"
+                      onclick="show()" id="showimg">
+                  <span class="vaild-pass"></span>
+                  <button type="submit" class="btn">Access My Portal</button>
+                  <span class="message"><a href="#">Forgot your password?</a></span>
+                  <span class="message"><a href="#">Don't have an account? Sign-up.</a></span>
+              </form>
+          </div>
         </div>
 
         </div>
