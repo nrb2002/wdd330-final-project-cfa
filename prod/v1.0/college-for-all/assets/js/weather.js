@@ -12,8 +12,8 @@ const visibility = document.querySelector("#visibility");
 
 
 //Specify the latitude and longitude of Trier, Germany using the information you have gathered and the examples provided.
-const lat = -4.3033920744381495;
-const lon = 15.311754604308138;
+const lat = -4.322447;
+const lon = 15.307045;
 //Set the units to imperial: "units=imperial"
 const units = "imperial";
 //Provide your API key: "appid=[enter your key here]"
@@ -53,7 +53,7 @@ async function getCurrentWeather(){
 getCurrentWeather();
 
 //Assign city name
-cityName.innerHTML = "Conzumel";
+cityName.innerHTML = "Kinshasa";
 
 //Build the displayCurrentWeather function to output to the given HTML document
 function displayCurrentWeather(data){    
