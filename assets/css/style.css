@@ -264,9 +264,11 @@ button, a { transition: var(--transition); }
 }
 
 
+
 .nav-toggle-btn span {
   /* background: var(--accent-1); */
-  color: var(--primary-color);
+  color: var(--secondary-color);
+  background-color: var(--secondary-color);
   width: 22px;
   height: 2px;
   border-radius: 2px;

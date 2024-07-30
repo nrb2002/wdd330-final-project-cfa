@@ -11,7 +11,7 @@ const navbarLinks = document.querySelectorAll("[data-nav-link]");
 
 const navToggleFunc = function () {
   navToggleBtn.classList.toggle("active");
-  navbar.classList.toggle("active");
+  navbar.classList.toggle("active"); 
   overlay.classList.toggle("active");
 }
 
