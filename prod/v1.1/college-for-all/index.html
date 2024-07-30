@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>College For All - Sign-in</title>
+  <title>College For All - Home</title>
 
   <!-- 
     - favicon
@@ -16,7 +16,8 @@
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="./assets/css/forms.css">
+  <link rel="stylesheet" href="./assets/css/weather.css">
+
   <!-- 
     - google font link
   -->
@@ -42,7 +43,7 @@
 
       <div class="overlay" data-overlay></div>
 
-      <a href="#" class="logo">
+      <a href="index.html" class="logo">
         <img src="./assets/images/logo-transparent.webp" alt="College For All logo" width="72">
         
       </a>
@@ -56,12 +57,12 @@
       </nav>
 
       <div class="header-actions">
-        <a href="#" class="btn user-btn" aria-label="Profile">
+        <a href="login.html" class="btn user-btn" aria-label="Profile">
           <ion-icon name="person-outline"></ion-icon>
           Sign in
         </a>
 
-        <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
+        <button class="btn nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
           <span class="one"></span>
           <span class="two"></span>
           <span class="three"></span>
@@ -86,21 +87,42 @@
       <section class="section hero" id="home">
         <div class="container">
 
-          <!-- Sign in form -->
-           <div class="login-page">
-            <div class="form">
-                <form class="login-form " action="dashboard.html">
-                    <h2>Sign in as a Student</h2>
-                    <input type="text" required placeholder="Username" id="user" autocomplete="off" />
-                    <input oninput="return formvalid()" type="password" required placeholder="Password" id="pass" autocomplete="off" />
-                    <img src="https://cdn2.iconfinder.com/data/icons/basic-ui-interface-v-2/32/hide-512.png"
-                        onclick="show()" id="showimg">
-                    <span id="vaild-pass"></span>
-                    <button type="submit" class="btn">Access My Portal</button>
-                    <p class="message"><a href="#">Forgot your password?</a></p>
-                </form>
+          <div class="hero-content">
+            <h2 class="h1 hero-title">College For All</h2>
+            <p class="hero-text">
+              Let's give it a chance!
+            </p>
+          </div>
+          
+          <div class="hero-banner"></div>
+          
+
+          <!-- Weather Info -->
+          <div class="weather"> 
+            <!-- Current weather -->
+            <div class="current-weather">
+              <p class="weather-title">Local Weather in Kinshasa, DRC
+                <!-- Include Conzumel and/or Mexican Flag -->
+                <img src="./assets/images/drc_flag.png" alt="Mexican Flag" width="100">
+
+              </p>
+              <div class="weather-card">
+                <div id="city" hidden></div>
+                <div id="current-temp"></div>
+                <div id="weather-icon"></div>
+                <div id="description"></div>
+              </div> 
+              <div class="weather-card">
+                <div id="humidity"></div>
+                <div id="wind-speed"></div>
+                <div id="feeling"></div>                
+                <div id="visibility"></div>
+              </div>
             </div>
-        </div>
+            <!-- Current weather -->
+            
+          </div>
+          <!-- ./Weather Info -->
 
         </div>
       </section>
@@ -186,7 +208,7 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="./assets/js/forms.js"></script>
+  <script src="./assets/js/weather.js"></script>
 </body>
 
 </html>

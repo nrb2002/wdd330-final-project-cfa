@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>College For All - Sign-in</title>
+  <title>College For All - Colleges' Portal</title>
 
   <!-- 
     - favicon
@@ -16,7 +16,7 @@
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="./assets/css/forms.css">
+
   <!-- 
     - google font link
   -->
@@ -86,22 +86,14 @@
       <section class="section hero" id="home">
         <div class="container">
 
-          <!-- Sign in form -->
-           <div class="login-page">
-            <div class="form">
-                <form class="login-form " action="dashboard.html">
-                    <h2>Sign in as a Student</h2>
-                    <input type="text" required placeholder="Username" id="user" autocomplete="off" />
-                    <input oninput="return formvalid()" type="password" required placeholder="Password" id="pass" autocomplete="off" />
-                    <img src="https://cdn2.iconfinder.com/data/icons/basic-ui-interface-v-2/32/hide-512.png"
-                        onclick="show()" id="showimg">
-                    <span id="vaild-pass"></span>
-                    <button type="submit" class="btn">Access My Portal</button>
-                    <p class="message"><a href="#">Forgot your password?</a></p>
-                </form>
-            </div>
-        </div>
-
+          <div class="hero-content">
+            <h2 class="h1 hero-title">Colleges' Portal</h2>
+            <p class="hero-text">
+              Let's give it a chance!
+            </p>
+          </div>
+          
+          <div class="hero-banner"></div>
         </div>
       </section>
 
@@ -186,7 +178,7 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="./assets/js/forms.js"></script>
+  <script src="scripts/weather.js"></script>
 </body>
 
 </html>
