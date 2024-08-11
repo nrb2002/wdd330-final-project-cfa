@@ -1,0 +1,243 @@
+/* General Styles */
+
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures the header stays above other content */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    color: #fff;
+    border-bottom: 1px solid #2D8C92; /* Optional: Adds a subtle border for better visibility */
+}
+
+header .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    font-size: 24px; /* Increase icon size */
+}
+
+nav ul li a .badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: red;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    color: #fff;
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.welcome-banner {
+    background-color: #37B7C3;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.welcome-banner h1 {
+    margin: 0;
+}
+
+.welcome-banner .date, .welcome-banner .quote {
+    margin: 10px 0;
+}
+.students{
+    color: var(--accent-2);
+}
+
+.dashboard-cards {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+ .card h2 {
+    margin-top: 0;
+       
+}
+
+.progress-ring {
+    width: 80px;
+    height: 80px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    margin: 10px 0;
+    position: relative;
+}
+
+.progress-ring circle {
+    fill: none;
+    stroke-width: 8;
+    stroke: var(--accent-1);
+    stroke-dasharray: 251.2; /* Circumference for a 40px radius */
+    stroke-dashoffset: 0;
+}
+
+.assignments-section, .grades-section {
+    margin-top: 40px;
+}
+
+.assignments-list {
+    list-style: none;
+    padding: 0;
+}
+
+.assignments-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.assignments-list .due-date {
+    display: flex;
+    align-items: center;
+}
+
+.assignments-list .due-date ion-icon {
+    margin-right: 5px;
+}
+
+.assignments-list .status-tag {
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+}
+
+.assignments-list .action-btn {
+    background-color: #37B7C3;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.grades-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.grades-table th, .grades-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.grades-table th {
+    background-color: #37B7C3;
+    color: #fff;
+}
+
+.grades-table td.grade.A {
+    color: #37B7C3;
+}
+
+.grades-table td ion-icon {
+    margin-right: 5px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.quick-links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.quick-links a {
+    color: #37B7C3;
+    text-decoration: none;
+}
+
+.quick-links ion-icon {
+    font-size: 24px; /* Increased icon size */
+}
+
+/* Footer */
+footer {
+    background-color: #37B7C3;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .contact-info, footer .useful-links, footer .social-media {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .useful-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+footer .social-media a {
+    color: #fff;
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+/* Icon Sizes */
+ion-icon {
+    font-size: 24px; /* Adjust size as needed */
+    vertical-align: middle;
+    font-weight: bold; /* Make icons bold */
+}

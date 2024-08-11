@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="WDD 230 - Web Frontend Development Baron Tshibasu College For All Site">
+    <meta name="author" content="Baron Tshibasu">
+
+    <!--Open Graph Meta Tags for social media sharing-->
+
+    <meta property="og:title" content="WDD330 - CFA Final Project">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://nrb2002.github.io/wdd330-final-project-cfa/assets/images/logo-transparent.webp">
+    <meta property="og:url" content="https://nrb2002.github.io/wdd330-final-project-cfa/">
+    <meta property="og:description" content="WDD 330 - Web Frontend Development II - Baron Tshibasu CFA Course Final Project">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <title>Student Dashboard</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/students.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="#"><img src="assets/images/logo-white-transparent.webp" alt="" width="100"></a></div>
+        <nav>
+            <ul>
+                <li><a href="#" title="Home"><ion-icon name="home-outline"></ion-icon></a></li>
+                <li><a href="#" title="Assignments"><ion-icon name="clipboard-outline"></ion-icon></a></li>
+                <li><a href="#" title="Grades"><ion-icon name="book-outline"></ion-icon></a></li>
+                <li><a href="#" title="Profile"><ion-icon name="person-outline"></ion-icon></a></li>
+                <li><a href="#" title="Notifications"><ion-icon name="notifications-outline"><span class="badge">3</span></ion-icon></a></li>
+                <li><a href="#" title="Log out"><ion-icon name="power-outline"></ion-icon></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="students">
+            <div class="welcome-banner">
+                <h1>Welcome back, [Student Name]!</h1>
+                <p class="date">July 25, 2024</p>
+                <p class="quote">"The only way to do great work is to love what you do." - Steve Jobs</p>
+            </div>
+            <div class="dashboard-cards">
+                <div class="card assignments-card">
+                    <h2>Assignments</h2>
+                    <div class="progress-ring" data-progress="75"></div>
+                    <p>Upcoming: 5</p>
+                    <p>Due Today: 2</p>
+                    <p>Overdue: 1</p>
+                </div>
+                <div class="card grades-card">
+                    <h2>Grades</h2>
+                    <div class="grade-graph"></div>
+                    <p>Average Grade: 85%</p>
+                </div>
+            </div>
+            <section class="assignments-section">
+                <h2>Upcoming Assignments</h2>
+                <ul class="assignments-list">
+                    <li class="assignment overdue">
+                        <strong>Course Name</strong>
+                        <a href="#">Assignment Title</a>
+                        <span class="due-date"><ion-icon name="calendar-outline"></ion-icon> July 20</span>
+                        <span class="status-tag">Overdue</span>
+                        <button class="action-btn">Submit</button>
+                    </li>
+                    <!-- Additional assignments here -->
+                </ul>
+            </section>
+            <section class="grades-section">
+                <h2>Grades Overview</h2>
+                <table class="grades-table">
+                    <thead>
+                        <tr>
+                            <th>Course</th>
+                            <th>Assignment</th>
+                            <th>Grade</th>
+                            <th>Date Graded</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Course Name</td>
+                            <td><a href="#">Assignment Title</a></td>
+                            <td class="grade A">A</td>
+                            <td><ion-icon name="calendar-outline"></ion-icon> July 22</td>
+                        </tr>
+                        <!-- Additional grades here -->
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="contact-info">
+            <p><ion-icon name="call-outline"></ion-icon> (123) 456-7890</p>
+            <p><ion-icon name="mail-outline"></ion-icon> info@school.edu</p>
+        </div>
+        <div class="useful-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Help Center</a>
+            <a href="#">Feedback</a>
+        </div>
+        <div class="social-media">
+            <a href="#" class="icon ion-logo-facebook"></a>
+            <a href="#" class="icon ion-logo-twitter"></a>
+            <a href="#" class="icon ion-logo-linkedin"></a>
+        </div>
+    </footer>
+     <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="assets/js/students.js" defer></script>
+</body>
+</html>
