@@ -1,12 +1,12 @@
 //TODO : Its a Completed Code
 function formvalid() {
-    var validatedPasswd = document.querySelector(".pass").value;
+    var vaildpass = document.getElementById("pass").value;
   
-    if (validatedPasswd.length <= 8 || validatedPasswd.length >= 12) {
-      document.querySelector(".vaild-pass").innerHTML = "Minimum 8 characters";
+    if (vaildpass.length <= 8 || vaildpass.length >= 20) {
+      document.getElementById("vaild-pass").innerHTML = "Minimum 8 characters";
       return false;
     } else {
-      document.querySelector(".vaild-pass").innerHTML = "";
+      document.getElementById("vaild-pass").innerHTML = "";
     }
   }
   

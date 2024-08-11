@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
   <meta name="description" content="WDD 230 - Web Frontend Development Baron Tshibasu College For All Site">
   <meta name="author" content="Baron Tshibasu">
 
@@ -19,9 +18,7 @@
   <meta property="og:description" content="WDD 330 - Web Frontend Development II - Baron Tshibasu CFA Course Final Project">
   <meta name="twitter:card" content="summary_large_image">
 
-  <title>College For All - Home</title>
-
-
+  <title>College For All - Sign-in</title>
 
   <!-- 
     - favicon
@@ -32,8 +29,7 @@
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="./assets/css/weather.css">
-
+  <link rel="stylesheet" href="./assets/css/forms.css">
   <!-- 
     - google font link
   -->
@@ -59,7 +55,7 @@
 
       <div class="overlay" data-overlay></div>
 
-      <a href="index.html" class="logo">
+      <a href="./index.html" class="logo">
         <img src="./assets/images/logo-transparent.webp" alt="College For All logo" width="72">
         
       </a>
@@ -67,110 +63,87 @@
       <nav class="navbar" data-navbar>
         <ul class="navbar-list">
           <li><a href="index.html" class="navbar-link" data-nav-link>Home</a></li>
-          <li> <a href="#students" class="navbar-link" data-nav-link>Students</a></li>
-          <li><a href="#colleges" class="navbar-link" data-nav-link>Colleges</a>          </li>
+          <li> <a href="students.html" class="navbar-link" data-nav-link>Students</a></li>
+          <li><a href="colleges.html" class="navbar-link" data-nav-link>Colleges</a>          </li>
         </ul>
       </nav>
 
       <div class="header-actions">
-        <a href="login.html" class="btn user-btn" aria-label="Profile">
+        <a href="#" class="btn user-btn" aria-label="Profile">
           <ion-icon name="person-outline"></ion-icon>
           Sign in
         </a>
-        <button class="btn nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
+
+        <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
           <span class="one"></span>
           <span class="two"></span>
           <span class="three"></span>
         </button>
+
       </div>
 
     </div>
   </header>
 
+
+
+
+
   <main>
-    <section class="hero" id="home">
-      <div class="container">
-        <div class="hero-content">
-          <h2 class="h1 hero-title">College For All</h2>
-          <p class="hero-text">
-            Let's give it a chance!
-          </p>
-        </div>
+    <article>
 
-        <!-- Banner -->
-        <div class="hero-banner"></div>         
-        <!-- ./Banner -->
+      <!-- 
+        - #HERO
+      -->
 
-        <!-- Weather Info -->
-        <div class="weather"> 
-          <!-- Current weather -->
-          <div class="current-weather">
-            <p class="weather-title">Local Weather in Kinshasa, DRC
-              <!-- Include DRC Flag -->
-              <img src="./assets/images/drc_flag.png" alt="DRC Flag" width="100">
-
-            </p>
-            <div class="weather-card">
-              <div id="city" hidden></div>
-              <div id="current-temp"></div>
-              <div id="weather-icon"></div>
-              <div id="description"></div>
-            </div> 
-            <div class="weather-card">
-              <div id="humidity"></div>
-              <div id="wind-speed"></div>
-              <div id="feeling"></div>                
-              <div id="visibility"></div>
+      <section class="section hero" id="home">
+        <div class="container">
+          <h2>Sign-in</h2>
+          <!-- Sign in form -->
+           <div class="login-page">
+            <div class="form">
+                <form class="login-form" action="">
+                    <h2>Students</h2><hr><br>
+                    <input type="text" required placeholder="Username" id="user" autocomplete="off" />
+                    <input oninput="return formvalid()" type="password" required placeholder="Password" id="pass" autocomplete="off" />
+                    <img src="https://cdn2.iconfinder.com/data/icons/basic-ui-interface-v-2/32/hide-512.png"
+                        onclick="show()" id="showimg">
+                    <span class="vaild-pass"></span>
+                    <button type="submit" class="btn">Access My Portal</button>
+                    <span class="message"><a href="#">Forgot your password?</a></span>
+                    <span class="message"><a href="#">Don't have an account? Sign-up.</a></span>
+                </form>
             </div>
+
+            <div class="form">
+              <form class="login-form" action="dashboard.html">
+                  <h2>Colleges</h2><hr><br>
+                  <input type="text" required placeholder="Username" id="user" autocomplete="off" />
+                  <input oninput="return formvalid()" type="password" required placeholder="Password" id="pass" autocomplete="off" />
+                  <img src="https://cdn2.iconfinder.com/data/icons/basic-ui-interface-v-2/32/hide-512.png"
+                      onclick="show()" id="showimg">
+                  <span class="vaild-pass"></span>
+                  <button type="submit" class="btn">Access My Portal</button>
+                  <span class="message"><a href="#">Forgot your password?</a></span>
+                  <span class="message"><a href="#">Don't have an account? Sign-up.</a></span>
+              </form>
           </div>
-          <!-- Current weather -->
-          
         </div>
-        <!-- ./Weather Info -->
 
-      </div>
-    </section>
-
-    <section class="" id="students">
-      <div class="container">
-        <div class="hero-content">
-          <h2 class="h2">Don't mess up your future. Apply at the best higher educations of the DRC. </h2>
-          <p class="hero-text">
-            Let's give it a chance!
-          </p>
         </div>
-        
-        <div class="hero-banner"></div>         
+      </section>
 
-        <!-- Weather Info -->
-        <div class="weather"> 
-          <!-- Current weather -->
-          <div class="current-weather">
-            <p class="weather-title">Local Weather in Kinshasa, DRC
-              <!-- Include DRC Flag -->
-              <img src="./assets/images/drc_flag.png" alt="DRC Flag" width="100">
 
-            </p>
-            <div class="weather-card">
-              <div id="city" hidden></div>
-              <div id="current-temp"></div>
-              <div id="weather-icon"></div>
-              <div id="description"></div>
-            </div> 
-            <div class="weather-card">
-              <div id="humidity"></div>
-              <div id="wind-speed"></div>
-              <div id="feeling"></div>                
-              <div id="visibility"></div>
-            </div>
-          </div>
-          <!-- Current weather -->
-          
-        </div>
-        <!-- ./Weather Info -->
 
-      </div>
-    </section>
+
+
+      
+
+
+
+
+
+    </article>
   </main>
 
 
@@ -185,8 +158,8 @@
     <div class="container">
       <div class="footer-top">
         <div class="footer-brand">
-          <a href="#" class="logo">
-            <img src="./assets/images/logo-white.webp" alt="College For All logo" width="196">
+          <a href="./index.html" class="logo">
+            <img src="./assets/images/logo-white.webp" alt="College For All Logo" width="196">
           </a>
         </div>
 
@@ -241,7 +214,7 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="./assets/js/weather.js"></script>
+  <script src="./assets/js/forms.js"></script>
 </body>
 
 </html>

@@ -14,10 +14,16 @@ const visibility = document.querySelector("#visibility");
 //Specify the latitude and longitude of Trier, Germany using the information you have gathered and the examples provided.
 const lat = -4.322447;
 const lon = 15.307045;
-//Set the units to imperial: "units=imperial"
-const units = "imperial";
+/*
+Temperature is available in Fahrenheit, Celsius and Kelvin units.
+For temperature in Fahrenheit use units=imperial
+For temperature in Celsius use units=metric
+Temperature in Kelvin is used by default, no need to use units parameter in API call
+*/
+
+const units = "metric";
 //Provide your API key: "appid=[enter your key here]"
-const apiKey = "a82bd4620ada83b94d8022e56f26265f";
+const apiKey = "d100c53e022ac740b8e46f1ae5caf79f";
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -57,7 +63,7 @@ cityName.innerHTML = "Kinshasa";
 
 //Build the displayCurrentWeather function to output to the given HTML document
 function displayCurrentWeather(data){    
-    currentTemp.innerHTML = `${Math.round(data.main.temp)}&deg;F`;    
+    currentTemp.innerHTML = `${Math.round(data.main.temp)}&deg;C`;    
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     weatherIcon.setAttribute("src",iconsrc);
     weatherIcon.setAttribute("alt", "Weather Icon");
@@ -67,10 +73,10 @@ function displayCurrentWeather(data){
     captionDesc.textContent = `${desc}`;
 
     humidity.textContent = `Humidity: ${data.main.humidity}%`; 
-    windSpeed.textContent = `Wind Speed: ${data.wind.speed}mph`;
-    feeling.textContent = `Feels like: ${Math.round(data.main.feels_like)}°F`;
-    minTemp.textContent = `Min. Temperature: ${Math.round(data.main.temp_min)}&deg;F`;
-    maxTemp.textContent = `Max. Temperature: ${Math.round(data.main.temp_max)}&deg;F`;
+    windSpeed.textContent = `Wind Speed: ${data.wind.speed} Km/h`;
+    feeling.textContent = `Feels like: ${Math.round(data.main.feels_like)}°C`;
+    minTemp.textContent = `Min. Temperature: ${Math.round(data.main.temp_min)}&deg;C`;
+    maxTemp.textContent = `Max. Temperature: ${Math.round(data.main.temp_max)}&deg;C`;
     visibility.textContent = `Visibility: ${data.visibility}km`;
 } 
 
@@ -117,7 +123,7 @@ function displayDailytWeather(data){
         //Get the datetime forecasted
         datetime.textContent = `${data.list[i].dt}`;  
         //round the final result of the daily temp     
-        dailyTemp.textContent = `Temperature: ${Math.round(data.list[i].main.temp)}&deg;F`;
+        dailyTemp.textContent = `Temperature: ${Math.round(data.list[i].main.temp)}&deg;C`;
         //Get the icon
         const iconsrcdaily = `https://openweathermap.org/img/w/${data.list[i].weather[0].icon}.png`;        
         weatherIconDaily.setAttribute("src",iconsrcdaily);

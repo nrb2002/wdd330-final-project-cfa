@@ -1,23 +1,21 @@
-
 .login-page {
-    background-color: var(--accent-1);
+    background-color: var(--accent-2);
     color: var(--primary-color);
-    /* height: 100vh; */
     padding: 4rem 0;
-    width: 100%;
     align-items: center;
     display: flex;
     justify-content: center;
+    gap: 2%;
 }
 
-.form {
+.login-page .form {
   position: relative;
   filter:drop-shadow(0 0 2px var(--accent-2));
   border-radius: 5px;
   width: 360px;
   height: 420px;
   background-color: var(--accent-1);
-  padding:40px;
+  padding:1.5rem;
 }
 
 .form img {
@@ -30,7 +28,7 @@
 
 .form input {
     outline: 0;
-    background: rgb(232, 240, 239);
+    background: rgb(243, 247, 247);
     border-radius: 4px;
     width: 100%;
     border: 0;
@@ -72,4 +70,16 @@ span {
     font-size: 14px;
     color: var(--secondary-color);
     text-decoration: none;
+}
+
+@media(max-width: 760px) {
+    .login-page {
+        padding: .5rem 1rem;
+        flex-direction: column;
+        width: 100%;
+    }
+    .login-page .form {
+       width: fit-content;  
+    }
+
 }

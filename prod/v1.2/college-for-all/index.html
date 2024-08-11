@@ -33,7 +33,7 @@
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/weather.css">
-
+  <link rel="stylesheet" href="assets/css/slider.css">
   <!-- 
     - google font link
   -->
@@ -66,7 +66,7 @@
 
       <nav class="navbar" data-navbar>
         <ul class="navbar-list">
-          <li><a href="index.html" class="navbar-link" data-nav-link>Home</a></li>
+          <li><a href="#home" class="navbar-link" data-nav-link>Home</a></li>
           <li> <a href="#students" class="navbar-link" data-nav-link>Students</a></li>
           <li><a href="#colleges" class="navbar-link" data-nav-link>Colleges</a>          </li>
         </ul>
@@ -77,17 +77,18 @@
           <ion-icon name="person-outline"></ion-icon>
           Sign in
         </a>
-        <button class="btn nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
+        <!-- <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
           <span class="one"></span>
           <span class="two"></span>
           <span class="three"></span>
-        </button>
+        </button> -->
       </div>
 
     </div>
   </header>
 
   <main>
+
     <section class="hero" id="home">
       <div class="container">
         <div class="hero-content">
@@ -130,47 +131,67 @@
 
       </div>
     </section>
-
-    <section class="" id="students">
+    <!-- Students Section -->
+    <section class="section-content" id="students">
       <div class="container">
-        <div class="hero-content">
-          <h2 class="h2">Don't mess up your future. Apply at the best higher educations of the DRC. </h2>
-          <p class="hero-text">
-            Let's give it a chance!
-          </p>
+        <div class="card">
+          <h2 class="h2">For Future and Returning Students</h2>
+          <a href="#" class="btn">Get started!</a>
         </div>
-        
-        <div class="hero-banner"></div>         
-
-        <!-- Weather Info -->
-        <div class="weather"> 
-          <!-- Current weather -->
-          <div class="current-weather">
-            <p class="weather-title">Local Weather in Kinshasa, DRC
-              <!-- Include DRC Flag -->
-              <img src="./assets/images/drc_flag.png" alt="DRC Flag" width="100">
-
-            </p>
-            <div class="weather-card">
-              <div id="city" hidden></div>
-              <div id="current-temp"></div>
-              <div id="weather-icon"></div>
-              <div id="description"></div>
-            </div> 
-            <div class="weather-card">
-              <div id="humidity"></div>
-              <div id="wind-speed"></div>
-              <div id="feeling"></div>                
-              <div id="visibility"></div>
-            </div>
-          </div>
-          <!-- Current weather -->
+        <div class="card slider-container">
+          <!-- Students Image Slider -->
+              <div class="slider">
+                <div class="slide one">
+                  <img src="assets/images/student-1.jpg" alt="">
           
+                  <span class="caption">
+                    Plan your success long in advance
+                  </span>
+                </div>
+                <div class="slide two">
+                  <img src="assets/images/student-2.jpg" alt="">
+                  <span class="caption">
+                    Meet a friendly community on our campuses
+                  </span>
+                </div>
+                <div class="slide three">
+                  <img src="assets/images/student-3.jpg" alt="">
+                  <span class="caption">
+                    Find the best schools in DRC
+                  </span>
+                </div>
+                <div class="slide four">
+                  <img src="assets/images/student-4.jpg" alt="">
+                  <span class="caption">
+                    Get ready for teamwork
+                  </span>
+                </div>
+                <div class="slide four">
+                  <img src="assets/images/student-5.jpg" alt="">
+                  <span class="caption">
+                    Meet our professional education advisors
+                  </span>
+                </div>
+              </div>
+          <!-- Students Image Slider -->
         </div>
-        <!-- ./Weather Info -->
-
       </div>
     </section>
+    <!-- Students Section -->
+
+    <!-- Colleges Section -->
+    <section class="section-content section-content-colleges" id="colleges">
+      <div class="container">
+        <div class="card">
+          <h2 class="h2">Don't mess up your future. Find the best Higher Education Institutions of the DRC. </h2>
+        </div>
+        <div class="card">
+          <h2 class="h2">Make your College known globally! Register your school in our standard application system. </h2>
+
+        </div>
+      </div>
+    </section>
+    <!-- Colleges Section -->
   </main>
 
 
