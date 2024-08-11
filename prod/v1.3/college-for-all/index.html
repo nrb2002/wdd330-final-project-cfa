@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <meta name="description" content="WDD 230 - Web Frontend Development Baron Tshibasu College For All Site">
+  <meta name="author" content="Baron Tshibasu">
+
+  <!--Open Graph Meta Tags for social media sharing-->
+
+  <meta property="og:title" content="WDD330 - CFA Final Project">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://nrb2002.github.io/wdd330-final-project-cfa/assets/images/logo-white-transparent.webp">
+  <meta property="og:url" content="https://nrb2002.github.io/wdd330-final-project-cfa/">
+  <meta property="og:description" content="WDD 330 - Web Frontend Development II - Baron Tshibasu CFA Course Final Project">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <title>College For All - Home</title>
+
+
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/favicon-color.webp" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/weather.css">
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Arizonia font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- #HEADER -->
+
+  <header>
+    <div class="logo">
+      <img src="assets/images/logo-white-transparent.webp" alt="College For All" width="96">
+    </div>
+    <ul class="menu">
+      <li><a href="index.html" id="home" class="active" rel="noopener noreferrer">Home</a></li>
+      <li><a href="students.html">Students</a></li>
+      <li><a href="schools.html">Schools</a></li>
+      <li><a href="advisors.html">Advisors</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    
+    <div class="search">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+    </div>    
+  </header>
+  
+  <!-- SLIDER -->
+   <div class="slider">
+    <!-- List of items -->
+     <div class="list">
+      <div class="item active">
+        <img src="assets/images/student-1.jpg" alt="">
+        <div class="content">
+          <p>Prospective and Returning Students</p>
+          <h2>Plan your success now!</h2>
+          <p>Find and apply to the best Higher Education institutions in the Democratic Republic of the Congo.</p>
+          <a href="schools.html" class="btn">Track Your Application</a>
+        </div>
+      </div>
+      <div class="item">
+        <img src="assets/images/student-2.jpg" alt="">
+        <div class="content">
+          <p>Colleges & Universities</p>
+          <h2>Join Our Community</h2>
+          <p>
+            Register your school to boost your admissions rate. Your prospective students can apply from anywhere in the world.
+          </p>
+          <a href="schools.html" class="btn">Visit Our Schools' Directory</a>
+        </div>
+      </div>
+      <div class="item">
+        <img src="assets/images/student-5.jpg" alt="">
+        <div class="content">
+          <p>Education Advisors</p>
+          <h2>Meet Our Dedicated Advisors</h2>
+          <p>Our team is made of professional education advisors, ready to assist and set you into your pathway to success.</p>
+          <a href="advisors.html" class="btn">Schedule a meeting</a>
+        </div>
+      </div>      
+     </div>
+     <!-- Arrow buttons -->
+      <div class="arrows">
+        <button id="prev"><</button>
+        <button id="next">></button>
+      </div>
+     <!-- Thumbnail -->
+      <div class="thumbnail">
+        <div class="item active">
+          <img src="assets/images/student-1.jpg" alt="">
+          <div class="content">Students</div>
+        </div>
+        <div class="item">
+          <img src="assets/images/student-2.jpg" alt="">
+          <div class="content">Schools</div>
+        </div>
+        <div class="item">
+          <img src="assets/images/student-5.jpg" alt="">
+          <div class="content">Advisors</div>
+        </div>        
+      </div>
+
+   </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo-white.webp" alt="College For All logo" width="192">
+          </a>
+        </div>
+
+        <ul class="footer-list">
+          <li><a href="#" class="footer-link">Help center</a></li>
+          <li><a href="#" class="footer-link">Privacy policy</a></li>
+          <li><a href="#" class="footer-link">Terms & conditions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">        
+        <ul class="social-list">
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      
+        <div class="copyright">
+          BYUI - WDD 330 - Final Project by Baron Tshibasu
+          &copy; 2024. All Rights Reserved
+        </div>
+        <div>
+          <a href="https://nrb2002.github.io/wdd330-final-project-cfa/2">https://nrb2002.github.io/wdd330-final-project-cfa/</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ./FOOTER -->
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/slider.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> -->
+  <!-- <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
+  <!-- <script src="./assets/js/weather.js"></script> -->
+</body>
+
+</html>
