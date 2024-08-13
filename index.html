@@ -14,7 +14,7 @@
 
   <meta property="og:title" content="WDD330 - CFA Final Project">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://nrb2002.github.io/wdd330-final-project-cfa/assets/images/logo-transparent.webp">
+  <meta property="og:image" content="https://nrb2002.github.io/wdd330-final-project-cfa/assets/images/logo-white-transparent.webp">
   <meta property="og:url" content="https://nrb2002.github.io/wdd330-final-project-cfa/">
   <meta property="og:description" content="WDD 330 - Web Frontend Development II - Baron Tshibasu CFA Course Final Project">
   <meta name="twitter:card" content="summary_large_image">
@@ -33,14 +33,12 @@
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/weather.css">
-
   <!-- 
     - google font link
   -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Open+Sans&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <!-- Arizonia font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,143 +48,89 @@
 
 <body>
 
-  <!-- 
-    - #HEADER
-  -->
+  <!-- #HEADER -->
 
-  <header class="header" data-header>
-    <div class="container">
-
-      <div class="overlay" data-overlay></div>
-
-      <a href="index.html" class="logo">
-        <img src="./assets/images/logo-transparent.webp" alt="College For All logo" width="72">
-        
-      </a>
-
-      <nav class="navbar" data-navbar>
-        <ul class="navbar-list">
-          <li><a href="index.html" class="navbar-link" data-nav-link>Home</a></li>
-          <li> <a href="#students" class="navbar-link" data-nav-link>Students</a></li>
-          <li><a href="#colleges" class="navbar-link" data-nav-link>Colleges</a>          </li>
-        </ul>
-      </nav>
-
-      <div class="header-actions">
-        <a href="login.html" class="btn user-btn" aria-label="Profile">
-          <ion-icon name="person-outline"></ion-icon>
-          Sign in
-        </a>
-        <button class="btn nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
-          <span class="one"></span>
-          <span class="two"></span>
-          <span class="three"></span>
-        </button>
-      </div>
-
+  <header>
+    <div class="logo">
+      <img src="assets/images/logo-white-transparent.webp" alt="College For All" width="96">
     </div>
+    <ul class="menu">
+      <li><a href="index.html" id="home" class="active" rel="noopener noreferrer">Home</a></li>
+      <li><a href="students.html">Students</a></li>
+      <li><a href="schools.html">Schools</a></li>
+      <li><a href="advisors.html">Advisors</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    
+    <div class="search">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+    </div>    
   </header>
-
-  <main>
-    <section class="hero" id="home">
-      <div class="container">
-        <div class="hero-content">
-          <h2 class="h1 hero-title">College For All</h2>
-          <p class="hero-text">
-            Let's give it a chance!
-          </p>
+  
+  <!-- SLIDER -->
+   <div class="slider">
+    <!-- List of items -->
+     <div class="list">
+      <div class="item active">
+        <img src="assets/images/student-1.jpg" alt="">
+        <div class="content">
+          <p>Prospective and Returning Students</p>
+          <h2>Plan your success now!</h2>
+          <p>Find and apply to the best Higher Education institutions in the Democratic Republic of the Congo.</p>
+          <a href="schools.html" class="btn">Track Your Application</a>
         </div>
-
-        <!-- Banner -->
-        <div class="hero-banner"></div>         
-        <!-- ./Banner -->
-
-        <!-- Weather Info -->
-        <div class="weather"> 
-          <!-- Current weather -->
-          <div class="current-weather">
-            <p class="weather-title">Local Weather in Kinshasa, DRC
-              <!-- Include DRC Flag -->
-              <img src="./assets/images/drc_flag.png" alt="DRC Flag" width="100">
-
-            </p>
-            <div class="weather-card">
-              <div id="city" hidden></div>
-              <div id="current-temp"></div>
-              <div id="weather-icon"></div>
-              <div id="description"></div>
-            </div> 
-            <div class="weather-card">
-              <div id="humidity"></div>
-              <div id="wind-speed"></div>
-              <div id="feeling"></div>                
-              <div id="visibility"></div>
-            </div>
-          </div>
-          <!-- Current weather -->
-          
-        </div>
-        <!-- ./Weather Info -->
-
       </div>
-    </section>
-
-    <section class="" id="students">
-      <div class="container">
-        <div class="hero-content">
-          <h2 class="h2">Don't mess up your future. Apply at the best higher educations of the DRC. </h2>
-          <p class="hero-text">
-            Let's give it a chance!
+      <div class="item">
+        <img src="assets/images/student-2.jpg" alt="">
+        <div class="content">
+          <p>Colleges & Universities</p>
+          <h2>Join Our Community</h2>
+          <p>
+            Register your school to boost your admissions rate. Your prospective students can apply from anywhere in the world.
           </p>
+          <a href="schools.html" class="btn">Visit Our Schools' Directory</a>
         </div>
-        
-        <div class="hero-banner"></div>         
-
-        <!-- Weather Info -->
-        <div class="weather"> 
-          <!-- Current weather -->
-          <div class="current-weather">
-            <p class="weather-title">Local Weather in Kinshasa, DRC
-              <!-- Include DRC Flag -->
-              <img src="./assets/images/drc_flag.png" alt="DRC Flag" width="100">
-
-            </p>
-            <div class="weather-card">
-              <div id="city" hidden></div>
-              <div id="current-temp"></div>
-              <div id="weather-icon"></div>
-              <div id="description"></div>
-            </div> 
-            <div class="weather-card">
-              <div id="humidity"></div>
-              <div id="wind-speed"></div>
-              <div id="feeling"></div>                
-              <div id="visibility"></div>
-            </div>
-          </div>
-          <!-- Current weather -->
-          
-        </div>
-        <!-- ./Weather Info -->
-
       </div>
-    </section>
-  </main>
+      <div class="item">
+        <img src="assets/images/student-5.jpg" alt="">
+        <div class="content">
+          <p>Education Advisors</p>
+          <h2>Meet Our Dedicated Advisors</h2>
+          <p>Our team is made of professional education advisors, ready to assist and set you into your pathway to success.</p>
+          <a href="advisors.html" class="btn">Schedule a meeting</a>
+        </div>
+      </div>      
+     </div>
+     <!-- Arrow buttons -->
+      <div class="arrows">
+        <button id="prev"><</button>
+        <button id="next">></button>
+      </div>
+     <!-- Thumbnail -->
+      <div class="thumbnail">
+        <div class="item active">
+          <img src="assets/images/student-1.jpg" alt="">
+          <div class="content">Students</div>
+        </div>
+        <div class="item">
+          <img src="assets/images/student-2.jpg" alt="">
+          <div class="content">Schools</div>
+        </div>
+        <div class="item">
+          <img src="assets/images/student-5.jpg" alt="">
+          <div class="content">Advisors</div>
+        </div>        
+      </div>
 
+   </div>
 
-
-
-
-  <!-- 
-    - #FOOTER
-  -->
-
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <div class="footer-top">
         <div class="footer-brand">
           <a href="#" class="logo">
-            <img src="./assets/images/logo-white.webp" alt="College For All logo" width="196">
+            <img src="./assets/images/logo-white.webp" alt="College For All logo" width="192">
           </a>
         </div>
 
@@ -226,22 +170,21 @@
       </div>
     </div>
   </footer>
-
-
+  <!-- ./FOOTER -->
 
 
 
   <!-- 
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/slider.js"></script>
 
   <!-- 
     - ionicon link
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="./assets/js/weather.js"></script>
+  <!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> -->
+  <!-- <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
+  <!-- <script src="./assets/js/weather.js"></script> -->
 </body>
 
 </html>
